@@ -4,7 +4,9 @@ class Solution:
         maxLength = 0
         length = 0
         for i, a in enumerate(nums):
-            if a-1 not in setElem:
+            if a-1 in setElem:
+                continue
+            else:
                 length = 1
                 while a+length in setElem:
                     length += 1
