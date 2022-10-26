@@ -5,10 +5,10 @@ class Solution:
         def recurse(s, i, arr):
             # print(">>", i, len(arr), maxSofFar)
             if i >= len(arr):
-                print(">>", self.maxSofFar)
+                # print(">>", self.maxSofFar)
                 if len(set(s)) == len(s):
                     self.maxSofFar = max(self.maxSofFar, len(s))
-                    print("here", self.maxSofFar, s)
+                    # print("here", self.maxSofFar, s)
                 return
             recurse(s, i+1, arr)
             if len(set(s+arr[i])) == len(s+arr[i]):
