@@ -7,7 +7,7 @@ class Solution:
             res = []
             index = 0
             i, j = 0, 0
-            while index < m*n + 30:
+            while index <= m*n +10:
                 if direction == right:
                     if (j < n and L[i][j] != 'visited'):
                         res.append(L[i][j])
